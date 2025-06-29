@@ -37,14 +37,20 @@ export default function EpisodeSection({ title, episodes, character }: Props) {
       </h3>
 
       {validEpisodes.length === 0 ? (
-        <p className="text-sm text-gray-400 italic text-center mt-2">
+        <p className="text-sm text-gray-800 italic text-center mt-2">
           No episodes in common
         </p>
       ) : (
-        <ul className="text-sm space-y-1 mt-2 ml-2">
+        <ul className="text-sm text-gray-800 space-y-1 mt-2 ml-2">
           {validEpisodes.map((ep, index) => (
-            <li key={ep.id ?? `${ep.name}-${index}`}>
-              <strong>{ep.name}</strong> – <em>{ep.air_date}</em>
+            <li
+              key={ep.id ?? `${ep.name}-${index}`}
+              className="flex justify-between items-center"
+            >
+              <strong>{ep.name}</strong>
+              <span className="px-2 py-0.5 rounded-full bg-red-400 text-yellow-200 text-xs">
+                {ep.air_date}
+              </span>
             </li>
           ))}
         </ul>

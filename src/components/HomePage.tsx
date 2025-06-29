@@ -36,7 +36,7 @@ export default function HomePage({
             key={side}
             className="bg-yellow-200 rounded-lg shadow p-4 h-[400px] flex flex-col"
           >
-            <h2 className="text-lg font-semibold mb-2 text-center">
+            <h2 className="text-lg text-gray-900 font-semibold mb-2 text-center">
               Character {side === "left" ? "1" : "2"}
             </h2>
             <CharacterSearch
