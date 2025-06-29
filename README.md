@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rick & Morty Episode Comparator 🧪
 
-## Getting Started
+A web app that allows users to search, select, and compare episodes between two Rick & Morty characters. Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+![Rick & Morty Episode Comparator](./public/preview.png)
+
+## ✨ Features
+
+- 🔍 Live character search
+- 🧑‍🤝‍🧑 Compare any two characters
+- 📺 View shared and unique episodes between both
+- 🌐 Infinite scroll to load more characters
+- ⚡ Responsive design, built with performance in mind
+- 🧪 Unit testing with Jest & React Testing Library
+
+---
+
+## 🧰 Tech Stack
+
+| Tool | Description |
+|------|-------------|
+| [Next.js 15](https://nextjs.org/) | React framework with App Router |
+| TypeScript | Static typing |
+| Tailwind CSS | Utility-first styling |
+| Jest + React Testing Library | Unit testing |
+| Rick and Morty API | Data source (REST/GraphQL) |
+
+---
+
+## 🚀 Getting Started
+
+Clone and install dependencies:
 
 ```bash
+git clone https://github.com/your-username/rick-morty-comparator.git
+cd rick-morty-comparator
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Run unit tests
+npm test
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Run tests with coverage
+npm run test:coverage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🗂️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+src/
+├─ app/                  # Next.js App Router (Layout, pages)
+├─ components/           # UI components (CharacterList, Search, EpisodeSection)
+├─ hooks/                # Custom hooks (useCharacterComparison)
+├─ services/             # API service
+├─ types/                # Type definitions
+└─ tests/                # Unit tests
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
