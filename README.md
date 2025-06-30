@@ -49,13 +49,15 @@ npm run test:coverage
 
 ## 🗂️ Project Structure
 
+```bash
 src/
-├─ app/                  # Next.js App Router (Layout, pages)
-├─ components/           # UI components (CharacterList, CharacterCard, CharacterSearch, EpisodeSection)
-├─ hooks/                # Custom hooks (useCharacterComparison)
-├─ services/             # API service
-├─ types/                # Type definitions
-└─ tests/                # Unit tests
+├─ app/         # Next.js App Router (Layout, pages)
+├─ components/  # UI components (CharacterList, CharacterCard, CharacterSearch, EpisodeSection)
+├─ hooks/       # Custom hooks (useCharacterComparison)
+├─ services/    # API service
+├─ types/       # Type definitions
+└─ tests/       # Unit tests
+```           
 
 ## 👨‍💻 Author
 
