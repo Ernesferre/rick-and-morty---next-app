@@ -13,7 +13,6 @@ A web app that allows users to search, select, and compare episodes between two 
 - ⚡ Responsive design, built with performance in mind
 - 🧪 Unit testing with Jest & React Testing Library
 
----
 
 ## 🧰 Tech Stack
 
@@ -25,34 +24,39 @@ A web app that allows users to search, select, and compare episodes between two 
 | Jest + React Testing Library | Unit testing |
 | Rick and Morty API | Data source (REST/GraphQL) |
 
----
 
-## 🚀 Getting Started
+## 🚀 Deployment
+
+[Published App](https://rick-and-morty-next-app-beta.vercel.app/)
+
+## ⚡ Getting Started
 
 Clone and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/rick-morty-comparator.git
-cd rick-morty-comparator
+git clone https://github.com/Ernesferre/rick-and-morty---next-app.git
+cd rick-and-morty---next-app
 npm install
 npm run dev
 Open http://localhost:3000 in your browser.
+```
 
-# Run unit tests
+## 🧪 Run unit tests
+```bash
 npm test
-
-# Run tests with coverage
 npm run test:coverage
-
+```
 
 ## 🗂️ Project Structure
 
-```bash
 src/
 ├─ app/                  # Next.js App Router (Layout, pages)
-├─ components/           # UI components (CharacterList, Search, EpisodeSection)
+├─ components/           # UI components (CharacterList, CharacterCard, CharacterSearch, EpisodeSection)
 ├─ hooks/                # Custom hooks (useCharacterComparison)
 ├─ services/             # API service
 ├─ types/                # Type definitions
 └─ tests/                # Unit tests
 
+## 👨‍💻 Author
+
+Made with ❤️ by @Ernest
